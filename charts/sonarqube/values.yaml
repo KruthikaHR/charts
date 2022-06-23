@@ -287,7 +287,7 @@ postgresql:
   # instance, set enabled to false and provide the name of the secret on the
   # line below:
   postgresqlUsername: "sonarUser"
-  postgresqlPassword: ""
+  postgresqlPassword: "abc"
   postgresqlDatabase: "sonarDB"
   existingSecret: sonar-postgresql
   # This is the full name of the secret that will be created
