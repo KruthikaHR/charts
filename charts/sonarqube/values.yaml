@@ -378,3 +378,27 @@ extraConfig:
 # adminJobAnnotations: {}
 
 terminationGracePeriodSeconds: 60
+global:
+  storageClass: "gp2-retain"
+  postgresql:
+    auth:
+      enablePostgresUser: true
+      postgresPassword: "abc"
+      username: "sonarUser"
+      password: "abc"
+      database: "sonarDB"
+      # existingSecret: "sonarpass"
+      #postgresqlPassword: "sonarpass"
+image:
+  registry: "harbor-tooling.dsp.intdigital.ee.co.uk"
+  repository: "dsp-core-docker-hub/bitnami/postgresql"
+  tag: 14.3.0-debian-11-r0
+auth:
+    enablePostgresUser: true
+    postgresPassword: "abc"
+    username: "sonarUser"
+    password: "abc"
+    database: "sonarDB"
+        #existingSecret: "sonarPass"
+      # persistence:
+      #   storageClass: "gp2-retain"
